@@ -1,0 +1,30 @@
+{
+  "name": "kawaii-photo-booth",
+  "version": "1.0.0",
+  "description": "A delightful online photo booth experience with kawaii aesthetics",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "photo-booth",
+    "kawaii",
+    "photography",
+    "webrtc",
+    "camera",
+    "instagram",
+    "gen-z",
+    "aesthetic"
+  ],
+  "author": "Kawaii Booth Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/kawaii-photo-booth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/kawaii-photo-booth/issues"
+  },
+  "homepage": "https://github.com/yourusername/kawaii-photo-booth#readme"
+}
