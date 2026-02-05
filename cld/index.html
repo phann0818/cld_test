@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Photo Booth ✨ | Create Cute Photo Strips Online</title>
+    <meta name="description" content="Create adorable photo booth strips with kawaii frames and backgrounds. Free, instant, and super cute!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner">
+                <div class="heart-loader">💕</div>
+            </div>
+            <p class="loading-text">Loading cuteness...</p>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div id="app" class="app-container">
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">📸</span>
+                    Kawaii Booth
+                    <span class="logo-sparkle">✨</span>
+                </h1>
+                <p class="tagline">Create cute photo strips instantly!</p>
+            </div>
+        </header>
+
+        <!-- Screen 1: Landing / Frame Selection -->
+        <section id="screen-landing" class="screen active">
+            <div class="screen-content">
+                <div class="welcome-section">
+                    <h2 class="screen-title">Choose Your Vibe 💕</h2>
+                    <p class="screen-description">Pick a frame that matches your aesthetic!</p>
+                </div>
+
+                <!-- Frame Gallery -->
+                <div class="frame-gallery">
+                    <div class="frame-category">
+                        <h3 class="category-title">✨ Classic</h3>
+                        <div class="frame-grid">
+                            <div class="frame-card" data-frame="classic-1">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23fff' width='300' height='400'/%3E%3Crect fill='none' stroke='%23333' stroke-width='3' x='10' y='10' width='280' height='380'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ddd'%3E📸%3C/text%3E%3C/svg%3E" alt="Classic Border">
+                                </div>
+                                <p class="frame-name">Simple Border</p>
+                            </div>
+                            <div class="frame-card" data-frame="classic-2">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23f5f5f5' width='300' height='400'/%3E%3Crect fill='white' x='20' y='20' width='260' height='360'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ddd'%3E🎞️%3C/text%3E%3C/svg%3E" alt="Film Strip">
+                                </div>
+                                <p class="frame-name">Film Strip</p>
+                            </div>
+                            <div class="frame-card" data-frame="classic-3">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23000' width='300' height='400'/%3E%3Crect fill='white' x='15' y='15' width='270' height='370'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ddd'%3E🖤%3C/text%3E%3C/svg%3E" alt="Minimalist Black">
+                                </div>
+                                <p class="frame-name">Minimal Black</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame-category">
+                        <h3 class="category-title">💖 Kawaii Cute</h3>
+                        <div class="frame-grid">
+                            <div class="frame-card" data-frame="kawaii-1">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23ffe4e9' width='300' height='400'/%3E%3Ctext x='30' y='40' font-size='30'%3E💕%3C/text%3E%3Ctext x='270' y='40' font-size='30'%3E⭐%3C/text%3E%3Ctext x='30' y='380' font-size='30'%3E⭐%3C/text%3E%3Ctext x='270' y='380' font-size='30'%3E💕%3C/text%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ffb3c1'%3E💖%3C/text%3E%3C/svg%3E" alt="Hearts & Stars">
+                                </div>
+                                <p class="frame-name">Hearts & Stars</p>
+                            </div>
+                            <div class="frame-card" data-frame="kawaii-2">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Cdefs%3E%3ClinearGradient id='rainbow' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ffb3ba'/%3E%3Cstop offset='33%25' style='stop-color:%23bae1ff'/%3E%3Cstop offset='66%25' style='stop-color:%23ffffba'/%3E%3Cstop offset='100%25' style='stop-color:%23baffc9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23rainbow)' width='300' height='400'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='white'%3E🌈%3C/text%3E%3C/svg%3E" alt="Pastel Rainbow">
+                                </div>
+                                <p class="frame-name">Pastel Rainbow</p>
+                            </div>
+                            <div class="frame-card" data-frame="kawaii-3">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23fff5f8' width='300' height='400'/%3E%3Ctext x='30' y='40' font-size='35'%3E🐰%3C/text%3E%3Ctext x='250' y='40' font-size='35'%3E🐾%3C/text%3E%3Ctext x='30' y='380' font-size='35'%3E🐾%3C/text%3E%3Ctext x='250' y='380' font-size='35'%3E🐰%3C/text%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ffc0cb'%3E🐇%3C/text%3E%3C/svg%3E" alt="Bunny & Paws">
+                                </div>
+                                <p class="frame-name">Bunny & Paws</p>
+                            </div>
+                            <div class="frame-card" data-frame="kawaii-4">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23ffe4f0' width='300' height='400'/%3E%3Ctext x='50' y='50' font-size='30'%3E🌸%3C/text%3E%3Ctext x='150' y='30' font-size='25'%3E🌸%3C/text%3E%3Ctext x='240' y='50' font-size='30'%3E🌸%3C/text%3E%3Ctext x='50' y='370' font-size='30'%3E🌸%3C/text%3E%3Ctext x='240' y='370' font-size='30'%3E🌸%3C/text%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ffb3d9'%3E🌺%3C/text%3E%3C/svg%3E" alt="Cherry Blossoms">
+                                </div>
+                                <p class="frame-name">Cherry Blossoms</p>
+                            </div>
+                            <div class="frame-card" data-frame="kawaii-5">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23fff8e7' width='300' height='400'/%3E%3Ctext x='30' y='40' font-size='40'%3E🧸%3C/text%3E%3Ctext x='250' y='40' font-size='40'%3E🧸%3C/text%3E%3Ctext x='30' y='380' font-size='40'%3E🧸%3C/text%3E%3Ctext x='250' y='380' font-size='40'%3E🧸%3C/text%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23d4a574'%3E🐻%3C/text%3E%3C/svg%3E" alt="Teddy Bears">
+                                </div>
+                                <p class="frame-name">Teddy Bears</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame-category">
+                        <h3 class="category-title">✨ K-pop Inspired</h3>
+                        <div class="frame-grid">
+                            <div class="frame-card" data-frame="kpop-1">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Cdefs%3E%3ClinearGradient id='neon' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23ff006e'/%3E%3Cstop offset='50%25' style='stop-color:%238338ec'/%3E%3Cstop offset='100%25' style='stop-color:%233a86ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='%23000' width='300' height='400'/%3E%3Crect fill='url(%23neon)' x='10' y='10' width='280' height='380' opacity='0.8'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='white'%3E🌟%3C/text%3E%3C/svg%3E" alt="Neon Lights">
+                                </div>
+                                <p class="frame-name">Neon Lights</p>
+                            </div>
+                            <div class="frame-card" data-frame="kpop-2">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23f0f0f0' width='300' height='400'/%3E%3Crect fill='none' stroke='%23ff1744' stroke-width='4' x='15' y='15' width='270' height='370'/%3E%3Ctext x='150' y='50' text-anchor='middle' font-size='18' fill='%23ff1744'%3E한글%3C/text%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ddd'%3E💜%3C/text%3E%3C/svg%3E" alt="Hangul Style">
+                                </div>
+                                <p class="frame-name">Hangul Style</p>
+                            </div>
+                            <div class="frame-card" data-frame="kpop-3">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Cdefs%3E%3ClinearGradient id='album' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea'/%3E%3Cstop offset='100%25' style='stop-color:%23764ba2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23album)' width='300' height='400'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='white' opacity='0.3'%3E💿%3C/text%3E%3C/svg%3E" alt="Album Cover">
+                                </div>
+                                <p class="frame-name">Album Cover</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame-category">
+                        <h3 class="category-title">🌸 Anime Style</h3>
+                        <div class="frame-grid">
+                            <div class="frame-card" data-frame="anime-1">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='white' width='300' height='400'/%3E%3Crect fill='none' stroke='%23333' stroke-width='5' x='5' y='5' width='290' height='190'/%3E%3Crect fill='none' stroke='%23333' stroke-width='5' x='5' y='205' width='290' height='190'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ddd'%3E🎭%3C/text%3E%3C/svg%3E" alt="Manga Panels">
+                                </div>
+                                <p class="frame-name">Manga Panels</p>
+                            </div>
+                            <div class="frame-card" data-frame="anime-2">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23fffacd' width='300' height='400'/%3E%3Ctext x='50' y='50' font-size='35'%3E✨%3C/text%3E%3Ctext x='240' y='50' font-size='35'%3E✨%3C/text%3E%3Ctext x='80' y='100' font-size='25'%3E✨%3C/text%3E%3Ctext x='210' y='100' font-size='25'%3E✨%3C/text%3E%3Ctext x='50' y='360' font-size='35'%3E✨%3C/text%3E%3Ctext x='240' y='360' font-size='35'%3E✨%3C/text%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ffd700'%3E⭐%3C/text%3E%3C/svg%3E" alt="Sparkles">
+                                </div>
+                                <p class="frame-name">Sparkle & Shine</p>
+                            </div>
+                            <div class="frame-card" data-frame="anime-3">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23e6f3ff' width='300' height='400'/%3E%3Crect fill='none' stroke='%234a90e2' stroke-width='3' x='10' y='10' width='280' height='380'/%3E%3Ctext x='30' y='40' font-size='20' fill='%234a90e2'%3E制服%3C/text%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ddd'%3E👔%3C/text%3E%3C/svg%3E" alt="School Uniform">
+                                </div>
+                                <p class="frame-name">School Uniform</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="frame-category">
+                        <h3 class="category-title">🦋 Y2K Retro</h3>
+                        <div class="frame-grid">
+                            <div class="frame-card" data-frame="y2k-1">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23ffd6e8' width='300' height='400'/%3E%3Ctext x='40' y='50' font-size='35'%3E🦋%3C/text%3E%3Ctext x='240' y='50' font-size='35'%3E🌼%3C/text%3E%3Ctext x='70' y='100' font-size='25'%3E🌸%3C/text%3E%3Ctext x='210' y='100' font-size='25'%3E🦋%3C/text%3E%3Ctext x='40' y='360' font-size='35'%3E🌼%3C/text%3E%3Ctext x='240' y='360' font-size='35'%3E🦋%3C/text%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ff69b4'%3E🌺%3C/text%3E%3C/svg%3E" alt="Butterfly & Flowers">
+                                </div>
+                                <p class="frame-name">Butterfly Dreams</p>
+                            </div>
+                            <div class="frame-card" data-frame="y2k-2">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23c9d6ff' width='300' height='400'/%3E%3Crect fill='%23e0e7ff' x='20' y='30' width='260' height='340'/%3E%3Ccircle cx='40' cy='50' r='8' fill='%235271ff'/%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ddd'%3E📱%3C/text%3E%3C/svg%3E" alt="Digital Camera">
+                                </div>
+                                <p class="frame-name">Digital Camera</p>
+                            </div>
+                            <div class="frame-card" data-frame="y2k-3">
+                                <div class="frame-preview">
+                                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect fill='%23ffe6f0' width='300' height='400'/%3E%3Ctext x='30' y='40' font-size='25' fill='%23ff1493' transform='rotate(-15 30 40)'%3ECUTE!%3C/text%3E%3Ctext x='240' y='50' font-size='25' fill='%23ff69b4' transform='rotate(15 240 50)'%3E💖%3C/text%3E%3Ctext x='40' y='360' font-size='25' fill='%23ff1493' transform='rotate(10 40 360)'%3E✨%3C/text%3E%3Ctext x='240' y='370' font-size='25' fill='%23ff69b4' transform='rotate(-10 240 370)'%3ELOVE%3C/text%3E%3Ctext x='150' y='200' text-anchor='middle' font-size='60' fill='%23ff69b4'%3E💕%3C/text%3E%3C/svg%3E" alt="Magazine Cutout">
+                                </div>
+                                <p class="frame-name">Magazine Cutout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Frame Upload -->
+                <div class="custom-upload-section">
+                    <div class="upload-card">
+                        <label for="custom-frame-upload" class="upload-label">
+                            <span class="upload-icon">📁</span>
+                            <span class="upload-text">Upload Your Own Frame</span>
+                            <span class="upload-subtext">PNG with transparent background</span>
+                        </label>
+                        <input type="file" id="custom-frame-upload" accept="image/png" hidden>
+                    </div>
+                </div>
+
+                <!-- Cut Layout Selection -->
+                <div class="layout-section">
+                    <h3 class="section-title">Choose Layout 📐</h3>
+                    <div class="layout-options">
+                        <button class="layout-btn active" data-layout="4">
+                            <span class="layout-icon">4️⃣</span>
+                            <span class="layout-label">4-Cut</span>
+                        </button>
+                        <button class="layout-btn" data-layout="2">
+                            <span class="layout-icon">2️⃣</span>
+                            <span class="layout-label">2-Cut</span>
+                        </button>
+                        <button class="layout-btn" data-layout="6">
+                            <span class="layout-icon">6️⃣</span>
+                            <span class="layout-label">6-Cut</span>
+                        </button>
+                    </div>
+                </div>
+
+                <button id="btn-next-bg" class="btn-primary" disabled>
+                    Next: Pick Background 🎨
+                </button>
+            </div>
+        </section>
+
+        <!-- Screen 2: Background Color Selection -->
+        <section id="screen-background" class="screen">
+            <div class="screen-content">
+                <button class="btn-back" id="btn-back-frame">← Back</button>
+                
+                <div class="welcome-section">
+                    <h2 class="screen-title">Pick Your Background 🎨</h2>
+                    <p class="screen-description">Choose a color that matches your mood!</p>
+                </div>
+
+                <div class="background-preview-container">
+                    <div class="background-preview" id="bg-preview">
+                        <div class="preview-frame"></div>
+                    </div>
+                </div>
+
+                <div class="color-palette">
+                    <button class="color-btn active" data-color="#ffb3d9" style="background-color: #ffb3d9;" title="Baby Pink">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#d4a5ff" style="background-color: #d4a5ff;" title="Lavender">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#b3ffcc" style="background-color: #b3ffcc;" title="Mint Green">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#ffcba4" style="background-color: #ffcba4;" title="Peach">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#b3d9ff" style="background-color: #b3d9ff;" title="Sky Blue">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#ffffff" style="background-color: #ffffff; border: 2px solid #e0e0e0;" title="White">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#000000" style="background-color: #000000;" title="Black">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#fff9b3" style="background-color: #fff9b3;" title="Soft Yellow">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#ffb3ba" style="background-color: #ffb3ba;" title="Coral">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#e4b3ff" style="background-color: #e4b3ff;" title="Lilac">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#fff5e6" style="background-color: #fff5e6; border: 2px solid #e0e0e0;" title="Cream">
+                        <span class="color-check">✓</span>
+                    </button>
+                    <button class="color-btn" data-color="#e0e0e0" style="background-color: #e0e0e0;" title="Light Gray">
+                        <span class="color-check">✓</span>
+                    </button>
+                </div>
+
+                <div class="custom-color-section">
+                    <label for="custom-color-input" class="custom-color-label">
+                        Custom Color:
+                    </label>
+                    <input type="color" id="custom-color-input" class="custom-color-input" value="#ffb3d9">
+                </div>
+
+                <button id="btn-start-camera" class="btn-primary">
+                    Start Camera 📸
+                </button>
+            </div>
+        </section>
+
+        <!-- Screen 3: Camera Setup & Capture -->
+        <section id="screen-camera" class="screen">
+            <div class="screen-content camera-screen">
+                <button class="btn-back" id="btn-back-bg">← Back</button>
+                
+                <div class="camera-container">
+                    <div class="camera-header">
+                        <h2 class="camera-title">Get Ready! ✨</h2>
+                        <button id="btn-flip-camera" class="btn-icon" title="Flip Camera">
+                            🔄
+                        </button>
+                    </div>
+
+                    <div class="camera-wrapper">
+                        <video id="camera-video" autoplay playsinline muted></video>
+                        <canvas id="camera-canvas" style="display: none;"></canvas>
+                        
+                        <div class="camera-overlay">
+                            <div class="position-guide"></div>
+                        </div>
+
+                        <div id="countdown-overlay" class="countdown-overlay" style="display: none;">
+                            <div class="countdown-number"></div>
+                        </div>
+
+                        <div id="flash-overlay" class="flash-overlay"></div>
+
+                        <div class="photo-counter" id="photo-counter" style="display: none;">
+                            Photo <span id="current-photo-num">1</span> of <span id="total-photos">4</span>
+                        </div>
+                    </div>
+
+                    <div class="camera-controls">
+                        <button id="btn-start-session" class="btn-primary btn-camera-start">
+                            Let's Take Some Pics! 💕
+                        </button>
+                        <p class="camera-tip">Position yourself in the center and smile! ✨</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 4: Preview & Download -->
+        <section id="screen-preview" class="screen">
+            <div class="screen-content">
+                <div class="preview-header">
+                    <h2 class="screen-title">Your Photos Look Amazing! ✨</h2>
+                    <p class="screen-description">Save and share your cute photo strip!</p>
+                </div>
+
+                <div class="final-preview-container">
+                    <canvas id="final-canvas"></canvas>
+                </div>
+
+                <div class="preview-actions">
+                    <button id="btn-download" class="btn-primary">
+                        📥 Download
+                    </button>
+                    <button id="btn-share" class="btn-secondary">
+                        📤 Share
+                    </button>
+                    <button id="btn-retake" class="btn-secondary">
+                        🔄 Retake All
+                    </button>
+                </div>
+
+                <div class="success-message">
+                    <p>✨ Share your creation with #KawaiiBoothMoments ✨</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with 💕 by Kawaii Booth | All photos processed locally - we never store your images!</p>
+    </footer>
+
+    <!-- TensorFlow.js for background removal -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.11.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-segmentation@1.0.2"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
